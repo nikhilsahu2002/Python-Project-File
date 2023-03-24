@@ -4,6 +4,7 @@ def hcf (a, b):
         if a%i==0 and b%i==0:
             HCF=i
         
-    print(HCF)
+    return HCF
 
-hcf(20,30)
+
+print(hcf(20,30)),
