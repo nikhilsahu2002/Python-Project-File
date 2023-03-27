@@ -39,3 +39,65 @@ def div(a,b=5):
 # def new(a='',b):
 #         print(a,b)
 
+# funtion with arbitatrary argument
+    # -variable lenth argument 
+    # - * variable lenth arugment
+
+# def sum(*info):
+#         j=0
+#         for i in info:
+#                 j+=i
+    
+#         return j
+          
+
+# print(sum(4,2,9,45,24,74))
+
+# - **Kwargs - key word based arbitrary argumnets
+
+# def show(**info):
+#         for key,value in info.items():
+#                 print(key,value)
+
+# show(name="nikhil",Class="MCA",age=22)
+
+# def show(F):
+#         for i in F:
+#                 print(i)
+# F=['banan','apple','orenga']
+# g=show(F)
+
+# def feb(args):
+#             if(args==0):
+#                     return args
+#             elif(args==1):
+#                     return args
+#             else:
+#                     return feb(args-2) + feb(args-1)
+            
+        
+# for i in range(0,5):
+#     print(feb(i))
+
+
+# def fact(args):
+        
+#         if args ==0:
+#                 return 1
+#         else :
+#                 return args*fact(args-1)
+
+# print(fact(50))
+
+# def value():
+#         return 5
+
+# n = value
+
+# print(n())
+
+#lamada funciton 
+x= lambda a,b:a*b
+
+z=x(5,10)
+print(z)
