@@ -33,6 +33,9 @@ def sub(a,b):
 def mul(a,b):
         print(a*b)
 
-def div(a,b):
+def div(a,b=5):
         print(a//b)
+#non default argument follows default argument 
+# def new(a='',b):
+#         print(a,b)
 
