@@ -101,3 +101,4 @@ x= lambda a,b:a*b
 
 z=x(5,10)
 print(z)
+
