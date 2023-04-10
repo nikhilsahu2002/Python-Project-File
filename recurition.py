@@ -15,3 +15,14 @@ def fac(n):
         return n * fac(n-1)
     
 print(f"Factorial is {fac(5)}")
+
+def num(n):
+    
+    if n==0:
+        print(0) 
+    else:
+         (num(n-1))
+         print(n)
+
+num(5)
+
