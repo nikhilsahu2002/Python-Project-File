@@ -9,4 +9,3 @@ def BUBBLE(arr):
 
     print(arr)
 
-BUBBLE([2,7,9,3,4,1])
