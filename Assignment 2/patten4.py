@@ -1,29 +1,16 @@
-# n = int(input("Enter the number of rows: "))
+from math import factorial
 
-# # Initialize the triangle with the first row
-# triangle = [[1]]
+n = int(input("Enter the number of rows: "))
 
-# # Loop through each row up to the nth row
-# for i in range(1, n):
-#     # Initialize the row with the first element
-#     row = [1]
-#     # Loop through each column in the row
-#     for j in range(1, i):
-#         # Calculate the value using the formula (i-1,j) + (i-1,j-1)
-#         value = triangle[i-1][j] + triangle[i-1][j-1]
-#         # Append the value to the row
-#         row.append(value)
-#     # Append 1 to the end of the row
-#     row.append(1)
-#     # Append the row to the triangle
-#     triangle.append(row)
+# Initialize the triangle with the first row
+triangle = [[1]]
 
-# # Print the triangle
-# for row in triangle:
-#     for element in row:
-#         print(element, end=" ")
-#     print()
-
+for i in range(n):
+    for j in range(n-i+1):
+        print(end=" ")
+    for j in range(i+1):
+        print(factorial(i) // (factorial(j) * factorial(i-j)),end=" ")
+    print()
 
 n = 5
 

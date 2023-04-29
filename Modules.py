@@ -65,5 +65,7 @@ imorts statment import code from one module into another programm
         print(os.getcwd())
         os.mkdir("MODULE") 
         # chdir() - Changing The Current Working Directory 
+        # rmdir() - remove a non working current directory
+        # lsiting the files and folder present in any directory 
 '''
 
