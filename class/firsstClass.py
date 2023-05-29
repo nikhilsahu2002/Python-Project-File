@@ -35,45 +35,63 @@ __init__()
 
 '''
 
-class persion:
+class person:
     def __init__(self,name,age) -> None:
             self.name = name
             self.age = age 
     def Print_Obj(self):
           return print(f"The Name Is {self.name} And Age Is {self.age}")
+
+class person2:
+    def __init__(self,name,age) -> None:
+            self.name = name
+            self.age = age 
         
-# a = persion("Nikhil",69)
+    def Show(self):
+             print(f"Person2 Showing {self.age} And {self.name}")
 
-# a.Print_Obj()
+class Showing(person,person2):
+      def __init__(self, name, age) -> None:
+            super().__init__(name, age)
 
-class Calculater :
-    def __init__(self,number1,number2) -> None:
-            self.number1 = number1
-            self.number2 = number2
-    def Add(self):
-          return self.number1+self.number2
+obj1 = Showing("Sagar",22)
+obj1.Show()
+obj1.Print_Obj()
+
+      
+        
+# # a = persion("Nikhil",69)
+
+# # a.Print_Obj()
+
+# class Calculater :
+#     def __init__(self,number1,number2) -> None:
+#             self.number1 = number1
+#             self.number2 = number2
+#     def Add(self):
+#           return self.number1+self.number2
     
-    def Sub(self):
-          return self.number1-self.number2
-    def Mul(self):
-          return self.number1 * self.number2
+#     def Sub(self):
+#           return self.number1-self.number2
+#     def Mul(self):
+#           return self.number1 * self.number2
 
-    def Show (self):
-          return self.Add() ,self.Mul() , self.Sub()
+#     def Show (self):
+#           return self.Add() ,self.Mul() , self.Sub()
 
-# obj = Calculater(5,6)
+# # obj = Calculater(5,6)
 
-# print(obj.Show())
-class Show(Calculater):
-    def __init__(self, number1, number2) -> None:
-          super().__init__(number1, number2) 
+# # print(obj.Show())
+# class Show(Calculater):
+#     def __init__(self, number1, number2) -> None:
+#           super().__init__(number1, number2) 
     
-    def Divide(self):
-          return self.number1 /self.number2
+#     def Divide(self):
+#           return self.number1 /self.number2
     
-obj = Show(15,20)
+# obj = Show(15,20)
 
-print(obj.Divide(),obj.Show())
+# print(obj.Divide(),obj.Show())
 
 
 
